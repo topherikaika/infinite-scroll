@@ -1,3 +1,8 @@
+const imageContainer = document.getElementById("image-container");
+const loader = document.getElementById("loader");
+
+let photosArray = [];
+
 // Unsplash API
 const count = 10;
 const apiKey = "akFpmHkI0LL4g6N5x9M49fItduJ092SHlvOv_u9hx_s";
@@ -17,5 +22,3 @@ async function getPhotos() {
 // On Load
 
 getPhotos();
-
-// Git test
