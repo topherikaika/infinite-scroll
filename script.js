@@ -12,7 +12,8 @@ const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&coun
 async function getPhotos() {
   try {
     const response = await fetch(apiURL);
-    const data = await response.json();
+    photosArray = await response.json();
+    console.log(photosArray);
     console.log(data);
   } catch (error) {
     // Catch error here
