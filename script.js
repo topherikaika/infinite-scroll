@@ -18,4 +18,4 @@ async function getPhotos() {
 
 getPhotos();
 
-// Git test
+// Git test 2
