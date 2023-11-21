@@ -27,9 +27,11 @@ function displayPhotos() {
     });
     // Create <img> for photo
     const img = document.createElement("img");
-    // img.setAttribute("src", photo.urls.regular);
-    //     img.setAttribute("alt", photo.alt_description);
-    // img.setAttribute("title", photo.alt_description);
+    setAttributes(img, {
+      src: photo.urls.regular,
+      alt: photo.alt_description,
+      title: photo.alt_description
+    });
     // Put <img> inside the <a>, then put both inside imageContainer element
     item.appendChild(img);
     imageContainer.appendChild(item);
