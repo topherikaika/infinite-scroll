@@ -13,3 +13,7 @@ async function getPhotos() {
     // Catch error here
   }
 }
+
+// On Load
+
+getPhotos();
