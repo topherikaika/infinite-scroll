@@ -14,6 +14,11 @@ const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&coun
 // Check if all images were loaded
 function imageLoaded() {
   console.log("image loaded");
+  imagesLoaded++;
+  if (imagesLoaded === totalImages) {
+    ready = true;
+    console.log("ready =", ready);
+  }
 }
 
 // Helper Function to Set Attributes on DOM Elements
