@@ -8,6 +8,11 @@ const count = 10;
 const apiKey = "akFpmHkI0LL4g6N5x9M49fItduJ092SHlvOv_u9hx_s";
 const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
+// Check if all images were loaded
+function imageLoadec() {
+  console.log("image loaded");
+}
+
 // Helper Function to Set Attributes on DOM Elements
 function setAttributes(element, attributes) {
   for (const key in attributes) {
